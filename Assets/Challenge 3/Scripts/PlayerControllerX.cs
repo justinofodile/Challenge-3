@@ -16,7 +16,7 @@ public class PlayerControllerX : MonoBehaviour
     private AudioSource playerAudio;
     public AudioClip moneySound;
     public AudioClip explodeSound;
-    public AudioClip bounceSound;
+    //public AudioClip bounceSound;
 
     public bool isLowEnough;
 
@@ -75,7 +75,7 @@ public class PlayerControllerX : MonoBehaviour
         else if (other.gameObject.CompareTag("Ground") && !gameOver)
         {
             playerRb.AddForce(Vector3.up * 10, ForceMode.Impulse);
-            playerAudio.PlayOneShot(bounceSound, 1.5f);
+           // playerAudio.PlayOneShot(bounceSound, 1.5f);
         }
 
     }
